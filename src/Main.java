@@ -3,6 +3,7 @@ import java.util.Comparator;
 public class Main {
     public static void main(String[] args) {
         // ArrayList Tests:
+        System.out.println("ArrayList tests");
         MyArrayList<Integer> list = new MyArrayList<>();
         Comparator<Integer> cmp = Integer::compare;
         list.add(8);
@@ -64,9 +65,7 @@ public class Main {
         list.addLast(4);
 
 
-
-
-
+        System.out.println("Doubly LinkedList tests");
         // Linked list tests
         MyLinkedList<Integer> list2 = new MyLinkedList<>();
         list2.add(8);
@@ -126,6 +125,18 @@ public class Main {
 
         // method addLast, add element on last Index
         list2.addLast(4);
+
+        System.out.println("Heap tests:");
+        MyMinHeap<Integer> minHeap = new MyMinHeap<>(cmp);
+        minHeap.insert(8);
+        minHeap.insert(7);
+        minHeap.insert(6);
+        minHeap.insert(5);
+        System.out.println(minHeap.size()); // 4
+        System.out.println(minHeap.getMin()); // 5
+        minHeap.extractMin(); // delete min element
+        System.out.println(minHeap.getMin()); // min element changed
+
 
 
 
