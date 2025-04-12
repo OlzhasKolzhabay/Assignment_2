@@ -23,6 +23,9 @@ public class MyStack<T> {
     }
 
     public T push(T newItem){
+        if(newItem == null){
+            return null; // check for null  can prevent adding not correct data, this makes MyStack more predictable and secure.
+        }
         stack.add(newItem);
         return newItem;
     }
