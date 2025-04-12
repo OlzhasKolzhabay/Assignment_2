@@ -95,6 +95,9 @@ public class Main {
         // removeLast will be remove last element 2
         list2.removeLast();
 
+
+
+
         // list will be sort using bubble sort - 3 4 5 7
         list2.sort(cmp);
         System.out.println("Sorted list");

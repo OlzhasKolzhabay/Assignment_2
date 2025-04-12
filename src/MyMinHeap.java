@@ -41,6 +41,9 @@ public class MyMinHeap<T> {
     }
 
     public void insert(T item) {
+        if(item == null){
+            return; // it is important checking for null prevents potential runtime errors and makes the class more reliable.
+        }
         list.add(item);
         traverseUp(list.size() - 1);
     }
