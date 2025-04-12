@@ -179,27 +179,30 @@ public class MyLinkedList<T> implements MyList<T> {
 
     @Override
     public void removeFirst() {
-        if(head == tail){
-            head = tail = null;
+        if (head == null) {
+            return;
         }
-        else{
-            head = head.next;
-        }
+        head = head.next;
         length--;
-
+        if (head == null) {
+            tail = null;
+        } else {
+            head.prev = null;
+        }
     }
 
     @Override
     public void removeLast() {
-        if(head == tail){
-            head = tail = null;
+        if (tail == null) {
+            return;
         }
-        else{
-            tail = tail.prev;
+        tail = tail.prev;
+        length--;
+        if (tail == null) {
+            head = null;
+        } else {
             tail.next = null;
         }
-        length--;
-
     }
 
 
