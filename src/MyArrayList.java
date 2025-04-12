@@ -147,8 +147,8 @@ public class MyArrayList<T> implements MyList<T> {
     // Inserts an item at the specified index, shifting elements to the right
     @Override
     public void add(int index, T item) {
-        if(index < 0 || index >= length){
-            throw new IndexOutOfBoundsException();
+        if(index < 0 || index > length){
+            return;
         }
         if(length == capacity){
             increaseBuffer();
