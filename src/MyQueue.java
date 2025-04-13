@@ -17,7 +17,7 @@ public class MyQueue<T> {
         return queue.getFirst();
     }
 
-    public T equeue(T newItem){
+    public T enqueue(T newItem){
         queue.addLast(newItem);
         return newItem;
     }
