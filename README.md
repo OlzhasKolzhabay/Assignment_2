@@ -8,8 +8,20 @@
 * MyQueue
 * MyMinHeap
 
+### Used MyLinkedList for MyStack and MyQueue and MyArrayList for MyMinHeap
+### MyStack
+* LinkedList is suitable for a stack because the operations of adding and removing elements (push/pop) occur only from one end (vertex). LinkedList provides O(1) for operations at the beginning or the end
+### MyQueue
+* For a queue, LinkedList is ideal because it supports fast O(1) operations of adding to the end (enqueue) and removing from the beginning (dequeue). In addition, LinkedList is flexible in size
+### MyMinHeap
+* ArrayList is used for minimal heap because a heap is a data structure that is stored as a complete binary tree, where elements are conveniently represented in an array. ArrayList provides O(1) access by index
+
+
+
+
+
 ## Requirements
-**Java 11 или выше** ([скачать JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html))
+**Java 11 or higher** ([Download JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html))
 * Build System: IntelliJ
 ## Installation
 * Cloning a repository
