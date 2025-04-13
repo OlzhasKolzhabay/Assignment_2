@@ -141,6 +141,21 @@ public class Main {
         System.out.println(minHeap.getMin()); // min element changed
 
 
+        System.out.println("Stack tests:");
+        MyStack<Integer> stack = new MyStack<>();
+        stack.push(33);
+        stack.push(44);
+        stack.push(66);
+        stack.push(56);
+        stack.push(42);
+        System.out.println(stack.peek()); // return last element Last in first out
+        stack.pop(); // delete last element
+        System.out.println(stack.size()); // length stack -- 4
+        System.out.println(stack.peek()); // return last element 56
+        System.out.println(stack.empty()); // check on empty set -- false
+
+
+
 
 
 
